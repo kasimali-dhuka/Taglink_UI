@@ -68,7 +68,7 @@ body{
     color: #000;
     font-size: 1.1em;
     font-weight: 600;
-    margin: 0 30px;
+    margin-right: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -88,6 +88,7 @@ body{
     color: black;
     font-size: 2.4em;
     font-weight: 900;
+    padding-bottom: 13px;
 }
 
 #mainNav .nav-taglink-container .user-profile .user-profile-link:hover{
@@ -113,6 +114,20 @@ body{
     cursor: pointer;
 }
 
+/* CSS of search bar  */
+
+#mainNav .nav-taglink-container .taglink-navbar-nav > ul > li.hidden-bar{
+    display: none;
+}
+
+.search-box{
+    max-width: 80%;
+    margin: auto;
+    display: none;
+}
+
+/* End of search bar CSS */
+
 @media only screen and (max-width: 992px){
     #mainNav .taglink-navbar-nav{
         position: absolute;
@@ -120,7 +135,7 @@ body{
         left: 0;
         top: 70px;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.842);
+        background-color: rgba(245, 245, 245, 0.9);
         z-index: 1;
     }
 
@@ -128,6 +143,16 @@ body{
         flex-direction: column;
         align-items: flex-start;
         display: block;
+    }
+
+    #mainNav .nav-taglink-container .taglink-navbar-nav > ul > li.hidden-bar{
+        display: block;
+        margin-bottom: 8px;
+        margin-top: 10px;
+    }
+
+    #mainNav .taglink-navbar-nav > ul > li.search-btn{
+        display: none;
     }
 
     #mainNav .taglink-navbar-nav li > a.taglink-nav-link{

@@ -35,12 +35,30 @@
                 <a href="#" class="taglink-navbar-brand-link">TAGLINK</a>
             </div>
 
+            <!-- <div class="search-bar">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Search....">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </div>
+                </div>
+            </div> -->
+
             <div class="taglink-navbar-nav" id="collapse-bar">
                 <ul>
+                    <li class="hidden-bar"> 
+                        <div class="input-group">
+                            <input type="search" id="search-bar" class="form-control" placeholder="Search.....">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary">Search</button>
+                            </div>
+                        </div> 
+                    </li>
                     <li><a href="#" class="taglink-nav-link"><i class="fas fa-home"></i> &nbsp; Home</a></li>
                     <li><a href="#" class="taglink-nav-link"><i class="fas fa-compass"></i> &nbsp; Explore</a></li>
                     <li><a href="#" class="taglink-nav-link"><i class="fas fa-clone"></i> &nbsp; Collection</a></li>
                     <li><a href="#" class="taglink-nav-link"><i class="fas fa-sign-out-alt"></i> &nbsp; Logout</a></li>
+                    <li class="search-btn"><a href="#" class="taglink-nav-link search-link"><i class="fas fa-search search-icon"></i></a></li>
                 </ul>
             </div>
 
@@ -53,6 +71,15 @@
             </button>
         </div>
     </nav>
+
+    <div class="search-box" id="search-box">
+        <div class="input-group">
+            <input type="search" name="search-bar" id="search-bar" placeholder="Search...." class="form-control">
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-outline-secondary">Search</button>
+            </div>
+        </div>
+    </div>
 
     <div class="taglink-container">
 
@@ -426,9 +453,18 @@
 
     <script>
         $(document).ready(function(){
+
+            // jQuery for search bar 
+            $(".search-link").click(function(){
+                $("#search-box").slideToggle();
+            });
+
+
+            // jQuery for navigation bar for width less than 992px
             $("#menu-btn").click(function(){
                 $("#collapse-bar").slideToggle();
             });
+
         });
     </script>
 
