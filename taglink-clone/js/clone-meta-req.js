@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     $("#url").on("keyup", function(event){
         if(event.keyCode == 86 || event.keyCode){
                 var req = {
@@ -24,6 +25,7 @@ $(document).ready(function(){
             $("#model").removeClass("show");
         }
     });
+    
 });
 
 
