@@ -84,368 +84,83 @@
     <div class="taglink-container">
 
         <!-- url post request html -->
-        <div class="taglink-form-group">
-            <label for="url">URL : </label>
-            <input type="url" class="taglink-form-control" id="url" placeholder="Enter your URL....">
-            <input type="button" class="taglink-btn" id="btn" value="Search">
-            
-            <div class="taglink-model" id="taglink-model">
-                <div class="image">
-                    <img src="" alt="default image" id="img">
+        <form action="" id="url-post-req">
+            <div class="taglink-form-group">
+                <label for="url">URL : </label>
+                <div style="display: inline; position: relative;">
+                    <input type="url" class="taglink-form-control" id="url" placeholder="Enter your URL....">
+                    <span class="cancel-btn" id="erase"><i class="fas fa-backspace"></i></span>
                 </div>
-                <div class="info">
-                    <h5 id="title"></h5>
-                    <p id="description"></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tabs of the user links -->
-
-        <!-- <div class="tab-groups">
-            <div class="tabs">
-                <div class="thumbnail">
-                    <img src="images/default.png" alt="Thumbnail">
+                <input type="button" class="taglink-btn" id="btn" value="Search">
+                
+                <div class="taglink-model" id="taglink-model">
+                    <div class="image">
+                        <img src="" alt="default image" id="img">
+                    </div>
+                    <div class="info">
+                        <h5 id="title"></h5>
+                        <p id="description"></p>
+                    </div>
                 </div>
             </div>
-        </div> -->
-
-        <div class="card-columns">
-            <div class="card img-fluid">
-                <img src="images/default.png" alt="deafult image"class="card-img-top">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Taglink</h4>
-                    <a href="#" id="tag" class="tags">#taglink</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                    <p class="card-text">Place where you can save and share the things you like.</p>
-                    <a href="#" class="btn btn-primary">Follow</a>
-                </div>
-            </div>
-
-            <div class="card img-fluid">
-                <img src="images/github.png" alt="github" class="card-img-top">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Github</h4>
-                    <a href="#" id="tag" class="tags">#github</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                    <p class="card-text">GitHub is a web-based version-control and collaboration platform for software developers.... 
-                        GitHub facilitates social coding by providing a web interface to the Git code repository and management tools for collaboration. GitHub can be thought of as a serious social networking site for software developers.</p>
-                </div>
-            </div>
-
-            <div class="card img-fluid">
-                <img src="images/wp.png" alt="Wordpress" class="card-img-top">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Wordpress</h4>
-                    <a href="#" id="tag" class="tags">#wordpress</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                    <p class="card-text">
-                        wordpress.org. WordPress (WP, WordPress.org) is a free and open-source content management system (CMS) written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system, referred to within WordPress as Themes.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card img-fluid">
-                <img src="images/youtube.png" alt="Youtube" class="card-img-top">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Youtube</h4>
-                    <a href="#" id="tag" class="tags">#youtube</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                    <p class="card-text">The term YouTube description refers to the text that a content creator supplies to describe their content, making it easy for YouTube to categorize and serve that content to users who are searching for it.</p>
-                </div>
-            </div>
-
-            <div class="card img-fluid">
-                <img src="images/bootstrap.png" alt="Bootstrap" class="card-img-top">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Bootstrap</h4>
-                    <a href="#" id="tag" class="tags">#bootsrap</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                    <p class="card-text">Bootstrap is a free and open source front end development framework for the creation of websites and web apps. The Bootstrap framework is built on HTML, CSS, and JavaScript (JS) to facilitate the development of responsive, mobile-first sites and apps.</p>
-                </div>
-            </div>
-
-            <div class="card img-fluid">
-                <img src="images/js.png" alt="JavaScript" class="card-img-top">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">JavaScript</h4>
-                    <a href="#" id="tag" class="tags">#javascript</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                    <p class="card-text">JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. ... JavaScript can function as both a procedural and an object oriented language.</p>
-                </div>
-            </div>
-
-            <div class="card img-fluid">
-                <img src="images/kotlin.png" alt="Kotlin" class="card-img-top">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Kotlin</h4>
-                    <a href="#" id="tag" class="tags">#kotlin</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                    <p class="card-text">Kotlin is a general purpose, free, open source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android that combines object-oriented and functional programming features. ... JetBrains uses Kotlin in many of its products including its flagship IntelliJ IDEA.</p>
-                </div>
-            </div>
-
-            <div class="card img-fluid">
-                <img src="images/python.png" alt="Python" class="card-img-top">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Python</h4>
-                    <a href="#" id="tag" class="tags">#python</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                    <p class="card-text">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. ... Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse.</p>
-                </div>
-            </div>
-
-            <div class="card img-fluid">
-                <img src="images/swift.png" alt="Swift" class="card-img-top">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Swift</h4>
-                    <a href="#" id="tag" class="tags">#swift</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                    <p class="card-text">Swift is the new programming language for iOS and OS X development. It borrows from languages such as C, Objective-C, and other modern programming languages. A proficient Swift developer is usually someone who is also proficient with Objective-C.</p>
-                </div>
-            </div>
-
-        </div>
-
+        </form>
         
-        <!-- Cards in deck style -->
+        <div class="row">
 
-        <div class="card-deck">
-            <div class="card">
-                <img src="images/default.png" alt="default" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Taglink</h4>
-                    <p class="card-text">Place where you can save and share the things you like.</p>
-                    <a href="#" class="btn btn-primary">Visit</a>
-                </div>
-            </div>
-                
-            <div class="card">
-                <img src="images/github.png" alt="github" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Github</h4>
-                    <p class="card-text">GitHub is a web-based version-control and collaboration platform for software developers.... 
-                        GitHub facilitates social coding by providing a web interface to the Git code repository and management tools for collaboration. GitHub can be thought of as a serious social networking site for software developers.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/wp.png" alt="Wordpress" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Wordpress</h4>
-                    <p class="card-text">
-                        wordpress.org. WordPress (WP, WordPress.org) is a free and open-source content management system (CMS) written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system, referred to within WordPress as Themes.
-                    </p>
+            <div class="col-lg-4 col-md-6">
+                <div class="link-tabs">
+                    <div class="img-tab">
+                        <img src="images/kotlin.png" alt="">
+                    </div>
+                    <div class="text-tab">
+                        <p class="title">Kotlin</p>
+                        <div class="tags">
+                            <a href="#">#programming</a>
+                            <a href="#">#language</a>
+                            <a href="#">#coding</a>
+                            <a href="#">#kotlin</a>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, libero?</p>
+                    </div>
                 </div>
             </div>
 
-        </div>
-
-        <div class="card-deck">
-
-            <div class="card">
-                <img src="images/youtube.png" alt="Youtube" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Youtube</h4>
-                    <p class="card-text">The term YouTube description refers to the text that a content creator supplies to describe their content, making it easy for YouTube to categorize and serve that content to users who are searching for it.</p>
+            <div class="col-lg-4 col-md-6">
+                <div class="link-tabs">
+                    <div class="img-tab">
+                        <img src="images/default.png" alt="">
+                    </div>
+                    <div class="text-tab">
+                        <p class="title">JavaScript</p>
+                        <div class="tags">
+                            <a href="#">#programming</a>
+                            <a href="#">#language</a>
+                            <a href="#">#coding</a>
+                            <a href="#">#javascript</a>
+                        </div>
+                        <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti voluptatum sunt similique autem error doloribus, aspernatur doloremque earum omnis et.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="images/bootstrap.png" alt="Bootstrap" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Bootstrap</h4>
-                    <p class="card-text">Bootstrap is a free and open source front end development framework for the creation of websites and web apps. The Bootstrap framework is built on HTML, CSS, and JavaScript (JS) to facilitate the development of responsive, mobile-first sites and apps.</p>
+            <div class="col-lg-4 col-md-6">
+                <div class="link-tabs">
+                    <div class="img-tab">
+                        <img src="images/bootstrap.png" alt="">
+                    </div>
+                    <div class="text-tab">
+                        <p class="title">Bootstrap</p>
+                        <div class="tags">
+                            <a href="#">#programming</a>
+                            <a href="#">#language</a>
+                            <a href="#">#coding</a>
+                            <a href="#">#bootstrap</a>
+                        </div>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro id esse officia quod tenetur quidem.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="images/js.png" alt="JavaScript" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">JavaScript</h4>
-                    <p class="card-text">JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. ... JavaScript can function as both a procedural and an object oriented language.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="card-deck" style="border-bottom: 5px solid black; margin-bottom: 40px;">
-
-            <div class="card">
-                <img src="images/kotlin.png" alt="Kotlin" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Kotlin</h4>
-                    <p class="card-text">Kotlin is a general purpose, free, open source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android that combines object-oriented and functional programming features. ... JetBrains uses Kotlin in many of its products including its flagship IntelliJ IDEA.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/python.png" alt="Python" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Python</h4>
-                    <p class="card-text">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. ... Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/swift.png" alt="Swift" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Swift</h4>
-                    <p class="card-text">Swift is the new programming language for iOS and OS X development. It borrows from languages such as C, Objective-C, and other modern programming languages. A proficient Swift developer is usually someone who is also proficient with Objective-C.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cards with image on top in grid view -->
-
-        <div class="card-columns">
-            <div class="card">
-                <img src="images/default.png" alt="default" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Taglink</h4>
-                    <p class="card-text">Place where you can save and share the things you like.</p>
-                    <a href="#" id="tag" class="tags">#taglink</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                </div>
-            </div>
-                
-            <div class="card">
-                <img src="images/github.png" alt="github" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Github</h4>
-                    <p class="card-text">GitHub is a web-based version-control and collaboration platform for software developers.... 
-                        GitHub facilitates social coding by providing a web interface to the Git code repository and management tools for collaboration. GitHub can be thought of as a serious social networking site for software developers.
-                    </p>
-                    <a href="#" id="tag" class="tags">#github</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/wp.png" alt="Wordpress" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Wordpress</h4>
-                    <p class="card-text">
-                        wordpress.org. WordPress (WP, WordPress.org) is a free and open-source content management system (CMS) written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system, referred to within WordPress as Themes.
-                    </p>
-                    <a href="#" id="tag" class="tags">#wordpress</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/youtube.png" alt="Youtube" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Youtube</h4>
-                    <p class="card-text">The term YouTube description refers to the text that a content creator supplies to describe their content, making it easy for YouTube to categorize and serve that content to users who are searching for it.</p>
-                    <a href="#" id="tag" class="tags">#youtube</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/bootstrap.png" alt="Bootstrap" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Bootstrap</h4>
-                    <p class="card-text">Bootstrap is a free and open source front end development framework for the creation of websites and web apps. The Bootstrap framework is built on HTML, CSS, and JavaScript (JS) to facilitate the development of responsive, mobile-first sites and apps.</p>
-                    <a href="#" id="tag" class="tags">#bootsrap</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/js.png" alt="JavaScript" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">JavaScript</h4>
-                    <p class="card-text">JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. ... JavaScript can function as both a procedural and an object oriented language.</p>
-                    <a href="#" id="tag" class="tags">#javascript</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/kotlin.png" alt="Kotlin" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Kotlin</h4>
-                    <p class="card-text">Kotlin is a general purpose, free, open source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android that combines object-oriented and functional programming features. ... JetBrains uses Kotlin in many of its products including its flagship IntelliJ IDEA.</p>
-                    <a href="#" id="tag" class="tags">#kotlin</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/python.png" alt="Python" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Python</h4>
-                    <p class="card-text">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. ... Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse.</p>
-                    <a href="#" id="tag" class="tags">#python</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/swift.png" alt="Swift" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Swift</h4>
-                    <p class="card-text">Swift is the new programming language for iOS and OS X development. It borrows from languages such as C, Objective-C, and other modern programming languages. A proficient Swift developer is usually someone who is also proficient with Objective-C.</p>
-                    <a href="#" id="tag" class="tags">#swift</a>
-                    <a href="#" id="tag" class="tags">#programming</a>
-                    <a href="#" id="tag" class="tags">#language</a>
-                    <a href="#" id="tag" class="tags">#technology</a>
-                    <a href="#" id="tag" class="tags">#blogs</a>
-                </div>
-            </div>
         </div>
 
     </div>
@@ -463,6 +178,12 @@
             // jQuery for navigation bar for width less than 992px
             $("#menu-btn").click(function(){
                 $("#collapse-bar").slideToggle();
+            });
+
+            //jQuery for erase button to clear the URL bar
+            $("#erase").click(function(){
+                $("#url").val("");
+                $("#taglink-model").removeClass("show");
             });
 
         });

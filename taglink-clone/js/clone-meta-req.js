@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     $("#url").on("keyup", function(event){
-        if(event.keyCode == 86 || event.keyCode){
+        if(event.keyCode == 86 || event.keyCode == 13){
                 var req = {
                     url: $("#url").val()
                 };
@@ -15,14 +15,18 @@ $(document).ready(function(){
                 });
 
                 response.done(function(data){
-                    $("#model").addClass("show");
+                    $("#taglink-model").addClass("show");
                     $("#title").text(data.page.title);
-                    $("#img").attr("src", data.og.image);
+                    if(data.og.image){
+                        $("#img").attr("src", data.og.image);
+                    }else{
+                        $("#img").attr("src", "images/github.png");
+                    }
                     $("#description").text(data.meta.description);
                     console.log(data);
                 });
         }else{
-            $("#model").removeClass("show");
+            $("#taglink-model").removeClass("show");
         }
     });
     
