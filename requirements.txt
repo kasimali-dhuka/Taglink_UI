@@ -1,0 +1,12 @@
+fastapi[all]
+metadata_parser
+django
+psycopg2-binary
+django-environ
+pillow
+django-widget-tweaks
+sorl-thumbnail
+django-taggit
+feedparser
+lxml
+bs4

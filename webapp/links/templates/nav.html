@@ -1,0 +1,67 @@
+ <!-- Navigation -->
+ <nav class="navbar" id="mainNav">
+  <div class="nav-taglink-container w-100">
+    <div class="taglink-navbar-brand">
+        <a href="{% url 'home-page' %}" class="taglink-navbar-brand-link">TAGLINK</a>
+    </div>
+
+    <div class="taglink-navbar-nav" id="collapse-bar">
+      <ul>
+        <li class="hidden-bar"> 
+          <div class="input-group">
+              <input type="search" id="search-bar" class="form-control" placeholder="Search.....">
+              <div class="input-group-append">
+                  <button class="btn btn-outline-secondary">Search</button>
+              </div>
+          </div> 
+        </li>
+        <li>
+          <a href="{% url 'home-page' %}" class="taglink-nav-link">
+            <i class="fas fa-home"></i> &nbsp; Home</a>
+        </li>
+        {% if user.is_authenticated %}
+          <li>
+            <a href="{% url 'user_links' %}" class="taglink-nav-link"
+              ><i class="fas fa-clone"></i> &nbsp; Collection</a
+            >
+          </li>
+          <li>
+            <a href="{% url 'add_link' %}" class="taglink-nav-link">
+              <i class="fas fa-clone"></i> &nbsp; Add Link
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'logout' %}" class="taglink-nav-link">
+              <i class="fas fa-sign-out-alt"></i> 
+              &nbsp; Logout
+            </a>
+          </li>
+          <li class="search-btn">
+            <a href="#" class="taglink-nav-link search-link">
+              <i class="fas fa-search search-icon"></i>
+            </a>
+          </li>
+        {% else %}
+          <li>
+            <a href="{% url 'register_page' %}" class="taglink-nav-link">
+              <i class="fas fa-sign-out-alt"></i> 
+              &nbsp; SignIn / Register 
+            </a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+    
+    {% if user.is_authenticated %}
+      <div class="user-profile">
+        <a href="{% url 'user_profile' request.user %}" class="user-profile-link">
+          <i class="fas fa-user-circle"></i>
+        </a>
+      </div>
+    {% endif %}
+
+    <button class="menu" id="menu-btn">
+      <i class="fas fa-bars menu-icon" id="collapse-button"></i>
+    </button>
+  </div>
+</nav>

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+
+<div class="p-4"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      {% include 'messages.html' %}
+      <form name="login" id="login" method="POST">
+        {% csrf_token %}
+        {% for message in messages %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          {{message}}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endfor %}
+        
+        <div class="form-group w-100">
+          <h2>Login here</h2>
+          <div class="form-group controls">
+          <label>User Name</label>
+          {#{ register.username }#}
+          {% render_field form.username class="form-control" %}
+          
+          <p class="help-block text-danger"></p>
+
+          <label>Password</label>
+          {#{ register.password1 }#}
+          {% render_field form.password class="form-control" %}
+          <p class="help-block text-danger"></p>
+          <button type="submit" class="btn" id="submit">LogIn</button>
+        </div>
+        <br>
+        <div id="success"></div>
+        <p>
+          <hr>
+          Not a User ?
+          <a class="btn-link" href="{% url 'register_page' %}">SignUp</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

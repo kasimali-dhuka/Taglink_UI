@@ -231,6 +231,16 @@ body{
     }
 }
 
+.taglink-container .header{
+    margin: 5em 0;
+}
+
+.taglink-container .header > p{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+}
+
 .taglink-container .taglink-form-group{
     max-width: 80%;
     margin: auto;
@@ -280,91 +290,4 @@ body{
     cursor: pointer;
     background-color: rgba(130, 130, 201, 0.952);
     outline: none;
-}
-
-.taglink-container .taglink-form-group .taglink-model{
-    width: 70%;
-    display: none;
-    border: 1px solid black;
-    height: auto;
-    position: absolute;
-    left: 64px;
-    padding: 10px;
-    z-index: 100;
-    background-color: rgba(245, 245, 245, 0.9);
-}
-
-.taglink-container .taglink-form-group .taglink-model .image{
-    margin-top: 24px;
-    margin-right: 10px;
-    overflow: hidden;
-}
-
-.taglink-container .taglink-form-group .show{
-    display: flex;
-}
-
-.taglink-container .taglink-form-group .image > img{
-    max-width: 100%;
-    height: auto;
-}
-
-@media only screen and (max-width: 992px){
-    .taglink-container .taglink-form-group .show{
-        flex-direction: column;
-    }
-}
-
-.row {
-    margin-top: 6em;
-}
-
-.row .col-lg-4 {
-    margin-bottom: 30px;
-}
-
-.row .col-lg-4 .link-tabs{
-    border: 2px solid grey;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 5px;
-    height: 27em;
-    overflow: hidden;
-}
-
-.row .col-lg-4 .link-tabs .img-tab {
-    overflow: hidden;
-}
-
-.row .col-lg-4 .link-tabs .img-tab > img{
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    height: 200px;
-    border-radius: 10px;
-}
-
-.row .col-lg-4 .link-tabs .text-tab .title{
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.row .col-lg-4 .link-tabs .text-tab .tags{
-    margin-bottom: 10px;
-}
-
-.row .col-lg-4 .link-tabs .text-tab .tags > a{
-    text-decoration: none;
-    background-color: lightblue;
-    padding: 3px;
-    border-radius: 5px;
-    color: #1c21d0;
-    display: inline-block;
-    margin-bottom: 4px;
-}
-
-.row .col-lg-4 .link-tabs .text-tab .tags > a:hover{
-    color: #3e65bd;
 }

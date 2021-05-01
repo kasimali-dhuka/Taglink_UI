@@ -1,0 +1,53 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      {% include 'messages.html' %}
+      
+      <h1>Register here,</h1>
+      
+      <form name="sentMessage" id="regForm" method="POST">
+        {% csrf_token %}
+        <div class="control-group">
+          <div class="form-group controls">
+            <label>User Name</label>
+            {#{ register.username }#}
+            <input type="text" class="form-control" placeholder="User Name" name="username" maxlength="200" required="" id="id_username" data-validation-required-message="Please enter your username.">
+            <p class="help-block text-danger"></p>
+
+            <label>Email Address</label>
+            {#{ register.email }#}
+            <input type="email" class="form-control" placeholder="Email Address" name="email" required="" id="id_email" data-validation-required-message="Please enter your email address.">
+            <p class="help-block text-danger"></p>
+          
+            <label>Password</label>
+            {#{ register.password1 }#}
+            <input type="password" class="form-control" placeholder="Password" name="password1" autocomplete="new-password" required="" id="id_password1" data-validation-required-message="Please enter password heare.">
+            <p class="help-block text-danger"></p>
+          
+            <label>Confirm Password</label>
+            {#{ register.password2 }#}
+            <input type="password" class="form-control" placeholder="Confirm Password" name="password2" autocomplete="new-password" required="" id="id_password2" data-validation-required-message="Please enter password again.">
+            <p class="help-block text-danger"></p>
+       
+            <button type="submit" class="btn btn-primary" id="submit">Register</button>
+          </div>
+        </div>
+        <br>
+        
+        <div id="success"></div>
+        <p>
+          <hr>
+          Already a user ?
+          <a class="btn-link" href="{% url 'login_page' %}">Sign In</a>
+        </p>
+      
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

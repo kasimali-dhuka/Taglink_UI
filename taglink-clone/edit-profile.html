@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/3e0a4a72d1.js" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Stylsheet for current page -->
+    <link rel="stylesheet" href="css/edit-profile.css">
+
+    <title>Edit profile</title>
+</head>
+<body>
+    <div class="header">
+        <div class="prev">
+            <a href="profile.html" id="prev-link"><i class="fas fa-arrow-circle-left"></i></a>
+        </div>
+
+        <div class="heading">
+            <p>Edit profile</p>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <form action="" class="edit-form">
+
+            <div class="user-img">
+                <input type="file" id="dp" style="display: none;">
+                <a href="#" id="user-profile-img" onclick="changeProifleImg()">
+                    <img src="images/default.png" alt="profile image">
+                    <i class="fas fa-plus-circle"></i>
+                </a>
+            </div>
+
+            <fieldset>
+                <legend>Edit : </legend>
+                    
+                <div class="form-group">
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name..." value="User Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username : </label>
+                    <input type="text" name="username" id="username" class="form-control" value="@username" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Password : </label>
+                    <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Enter your password..." value="password" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="fb">Facebook : (Optional)</label>
+                    <input type="text" name="fb" id="fb" class="form-control" placeholder="Enter your facebook Id...">
+                </div>
+
+                <div class="form-group">
+                    <label for="twitter">Twitter : (Optional)</label>
+                    <input type="text" name="twitter" id="twitter" class="form-control" placeholder="Enter your twitter Id...">
+                </div>
+
+                <div class="form-group">
+                    <label for="insta">Instagram : (Optional)</label>
+                    <input type="text" name="insta" id="insta" class="form-control" placeholder="Enter your instagram Id...">
+                </div>
+
+                <div class="form-group">
+                    <label for="fb">Linkedin : (Optional)</label>
+                    <input type="text" name="fb" id="fb" class="form-control" placeholder="Enter your linkedin Id...">
+                </div>
+
+                <div class="form-group">
+                    <label for="youtube">Youtube : (Optional)</label>
+                    <input type="text" name="youtube" id="youtube" class="form-control" placeholder="Enter your youtube Id...">
+                </div>
+
+                <div class="form-group">
+                    <label for="github">Github : (Optional)</label>
+                    <input type="text" name="github" id="github" class="form-control" placeholder="Enter your github Id...">
+                </div>
+
+                <button class="btn btn-outline-primary w-100 mt-5 p-2">Save changes</button>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+    <script>
+
+        function changeProifleImg(){
+            document.getElementById("dp").click();
+        }
+
+    </script>
+</body>
+</html>
