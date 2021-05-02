@@ -42,6 +42,7 @@ header .heading .brand-link{
     max-width: 60%;
     margin: auto;
     box-shadow: 3px 4px 15px grey;
+    margin-bottom: 3em;
 }
 
 @media only screen and (max-width: 992px){
