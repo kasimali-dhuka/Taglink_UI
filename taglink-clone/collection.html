@@ -55,7 +55,7 @@
                         </div> 
                     </li>
                     <li><a href="index-page.html" class="taglink-nav-link"><i class="fas fa-home"></i> &nbsp; Home</a></li>
-                    <li><a href="rss-feed-page.html" class="taglink-nav-link"><i class="fas fa-compass"></i> &nbsp; Explore</a></li>
+                    <li><a href="rss-feed-page.html" class="taglink-nav-link"><i class="fas fa-rss-square"></i> &nbsp; RSS feed</a></li>
                     <li><a href="collection.html" class="taglink-nav-link"><i class="fas fa-clone"></i> &nbsp; Collection</a></li>
                     <li><a href="#" class="taglink-nav-link"><i class="fas fa-sign-out-alt"></i> &nbsp; Logout</a></li>
                     <li class="search-btn"><a href="#" class="taglink-nav-link search-link"><i class="fas fa-search search-icon"></i></a></li>
@@ -85,13 +85,26 @@
 
         <!-- url post request html -->
         <form action="" id="url-post-req">
+
+            <div class="taglink-form-group">
+                <div class="add-category">
+                    <label for="category" class="custom-label">Category:</label>
+                    <select name="category" id="category" class="custom-select" required>
+                        <option selected>Select a category</option>
+                        <option value="tech">Technical</option>
+                        <option value="nontech">Non-technical</option>
+                    </select>
+                    <a href="#" class="btn btn-outline-primary">+ Add Category</a>
+                </div>
+            </div>
+
+
             <div class="taglink-form-group">
                 <label for="url">URL : </label>
                 <div style="display: inline; position: relative;">
-                    <input type="url" class="taglink-form-control" id="url" placeholder="Enter your URL....">
+                    <input type="url" class="taglink-form-control" id="url" placeholder="Enter your URL...." required>
                     <span class="cancel-btn" id="erase"><i class="fas fa-backspace"></i></span>
                 </div>
-                <input type="button" class="taglink-btn" id="btn" value="Search">
                 
                 <div class="taglink-model" id="taglink-model">
                     <div class="image">
@@ -103,6 +116,16 @@
                     </div>
                 </div>
             </div>
+
+            <div class="taglink-form-group tags-group">
+                <label for="tags" class="tag-label">Tags : </label>
+                <input type="text" class="taglink-form-control tag-input" name="tags" id="tags" placeholder="Enter supporting tags for your link..." data-role="tagsinput" required>
+            </div>
+            
+            <div class="taglink-form-group">
+                <input type="button" class="taglink-btn" id="btn" value="Search">
+            </div>
+
         </form>
 
         
@@ -130,8 +153,14 @@
                 $("#taglink-model").removeClass("show");
             });
 
+            //jQuery for removing show class when input is unfocused
+            $("#url").focusout(function(){
+                $("#taglink-model").removeClass("show");
+            });
+
         });
     </script>
     <script src="js/meta-req.js"></script>
+    <script src="https://www.jqueryscript.net/demo/Bootstrap-4-Tag-Input-Plugin-jQuery/tagsinput.js"></script>
 </body>
 </html>

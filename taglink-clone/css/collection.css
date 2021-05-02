@@ -190,7 +190,7 @@ body{
 .taglink-container{
     max-width: 80%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 5em;
     margin-bottom: 50px;
 }
 
@@ -222,10 +222,6 @@ body{
         margin: auto;
     }
 
-    .taglink-container .taglink-form-group .taglink-form-control{
-        max-width: 50%;
-    }
-
     .taglink-container .taglink-form-group label{
         margin-left: 10px;
     }
@@ -235,17 +231,44 @@ body{
     max-width: 80%;
     margin: auto;
     position: relative;
-    text-align: center;
+    margin-bottom: 20px;
+}
+
+.taglink-container .taglink-form-group .add-category .custom-label{
+    font-weight: 300;
+}
+
+.taglink-container .taglink-form-group .add-category > a{
+    margin-top: 15px;
+    width: 100%;
 }
 
 .taglink-container .taglink-form-group label{
     font-size: 1.3em;
-    font-weight: 900;
+    font-weight: 500;
     padding-right: 10px;
 }
 
+/* .taglink-container .taglink-form-group .tag-label{
+    font-weight: 300;
+} */
+
+.taglink-container .tags-group{
+    border-bottom: 1px solid black;
+}
+
+.taglink-container .tags-group .bootstrap-tagsinput > input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.taglink-container .taglink-form-group .tag-input{
+    padding: 7px !important;
+}
+
 .taglink-container .taglink-form-group .taglink-form-control{
-    width: 70%;
+    width: 100%;
     border-radius: 7px;
     border: 1px solid;
     outline: none;
@@ -271,6 +294,8 @@ body{
 }
 
 .taglink-container .taglink-form-group .taglink-btn{
+    width: 100%;
+    margin-top: 15px;
     border-radius: 7px;
     border: none;
     padding: 10px;
@@ -282,13 +307,19 @@ body{
     outline: none;
 }
 
+.taglink-container .tags-group{
+    margin-left: 10px;
+    text-align: start;
+    margin:auto;
+}
+
 .taglink-container .taglink-form-group .taglink-model{
     width: 70%;
     display: none;
     border: 1px solid black;
     height: auto;
     position: absolute;
-    left: 64px;
+    left: 14.5%;
     padding: 10px;
     z-index: 100;
     background-color: rgba(245, 245, 245, 0.9);
