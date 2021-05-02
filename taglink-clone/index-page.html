@@ -23,7 +23,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Stylesheet for current page -->
-    <link rel="stylesheet" href="css/clone-index.css">
+    <link rel="stylesheet" href="css/collection.css">
     <link rel="stylesheet" href="css/tabs.css">
 
     <title>Clone Taglink</title>
@@ -32,7 +32,7 @@
     <nav class="taglink-navbar" id="mainNav">
         <div class="nav-taglink-container">
             <div class="taglink-navbar-brand">
-                <a href="#" class="taglink-navbar-brand-link">TAGLINK</a>
+                <a href="index-page.html" class="taglink-navbar-brand-link">TAGLINK</a>
             </div>
 
             <!-- <div class="search-bar">
@@ -54,9 +54,9 @@
                             </div>
                         </div> 
                     </li>
-                    <li><a href="#" class="taglink-nav-link"><i class="fas fa-home"></i> &nbsp; Home</a></li>
+                    <li><a href="index-page.html" class="taglink-nav-link"><i class="fas fa-home"></i> &nbsp; Home</a></li>
                     <li><a href="rss-feed-page.html" class="taglink-nav-link"><i class="fas fa-compass"></i> &nbsp; Explore</a></li>
-                    <li><a href="#" class="taglink-nav-link"><i class="fas fa-clone"></i> &nbsp; Collection</a></li>
+                    <li><a href="collection.html" class="taglink-nav-link"><i class="fas fa-clone"></i> &nbsp; Collection</a></li>
                     <li><a href="#" class="taglink-nav-link"><i class="fas fa-sign-out-alt"></i> &nbsp; Logout</a></li>
                     <li class="search-btn"><a href="#" class="taglink-nav-link search-link"><i class="fas fa-search search-icon"></i></a></li>
                 </ul>
@@ -82,28 +82,6 @@
     </div>
 
     <div class="taglink-container">
-
-        <!-- url post request html -->
-        <form action="" id="url-post-req">
-            <div class="taglink-form-group">
-                <label for="url">URL : </label>
-                <div style="display: inline; position: relative;">
-                    <input type="url" class="taglink-form-control" id="url" placeholder="Enter your URL....">
-                    <span class="cancel-btn" id="erase"><i class="fas fa-backspace"></i></span>
-                </div>
-                <input type="button" class="taglink-btn" id="btn" value="Search">
-                
-                <div class="taglink-model" id="taglink-model">
-                    <div class="image">
-                        <img src="" alt="default image" id="img">
-                    </div>
-                    <div class="info">
-                        <h5 id="title"></h5>
-                        <p id="description"></p>
-                    </div>
-                </div>
-            </div>
-        </form>
         
         <div class="row">
 
@@ -188,6 +166,6 @@
 
         });
     </script>
-    <script src="js/clone-meta-req.js"></script>
+    <script src="js/meta-req.js"></script>
 </body>
 </html>

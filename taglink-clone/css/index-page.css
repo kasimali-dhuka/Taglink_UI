@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgba(245, 245, 245, 0.863);
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+#mainNav .nav-taglink-container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+#mainNav .taglink-navbar-brand{
+    padding: 10px 20px;
+    flex: 20%;
+}
+
+#mainNav .taglink-navbar-brand .taglink-navbar-brand-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#mainNav .taglink-navbar-brand .taglink-navbar-brand-link:hover{
+    color: rgb(102, 102, 102);
+}
+
+@media only screen and (max-width: 1200px){
+    #mainNav .taglink-navbar-brand{
+        flex: 10%;
+    }
+}
+
+#mainNav .taglink-navbar-nav{
+    display: flex;
+    flex: 75%;
+    justify-content: flex-end;
+}
+
+#mainNav .taglink-navbar-nav > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-basis: auto;
+    align-items: center;
+    margin-left: 40px;
+}
+
+@media only screen and (max-width: 1200px){
+    #mainNav .taglink-navbar-nav > ul{
+        margin-left: 30px;
+        padding-left: 0;
+    }
+}
+
+#mainNav .taglink-navbar-nav li > a.taglink-nav-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-right: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#mainNav .taglink-navbar-nav  li > a.taglink-nav-link:hover{
+    color: rgb(102, 102, 102);
+}
+
+#mainNav .nav-taglink-container .user-profile{
+    display: flex;
+    align-items: center;
+    flex: 5%;
+}
+
+#mainNav .nav-taglink-container .user-profile .user-profile-link{
+    text-decoration: none;
+    color: black;
+    font-size: 2.4em;
+    font-weight: 900;
+    padding-bottom: 13px;
+}
+
+#mainNav .nav-taglink-container .user-profile .user-profile-link:hover{
+    color: rgb(102, 102, 102);
+}
+
+#mainNav .nav-taglink-container .menu{
+    position: absolute;
+    display: none;
+    right: 7%;
+    top: 13px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#mainNav .nav-taglink-container .menu:hover{
+    color: rgb(102, 102, 102);
+}
+
+#mainNav .nav-taglink-container .menu .menu-icon{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* CSS of search bar  */
+
+#mainNav .nav-taglink-container .taglink-navbar-nav > ul > li.hidden-bar{
+    display: none;
+}
+
+.search-box{
+    max-width: 80%;
+    margin: auto;
+    display: none;
+}
+
+/* End of search bar CSS */
+
+@media only screen and (max-width: 992px){
+    #mainNav .taglink-navbar-nav{
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        background-color: rgba(245, 245, 245, 0.9);
+        z-index: 1;
+    }
+
+    #mainNav .taglink-navbar-nav > ul{
+        flex-direction: column;
+        align-items: flex-start;
+        display: block;
+    }
+
+    #mainNav .nav-taglink-container .taglink-navbar-nav > ul > li.hidden-bar{
+        display: block;
+        margin-bottom: 8px;
+        margin-top: 10px;
+    }
+
+    #mainNav .taglink-navbar-nav > ul > li.search-btn{
+        display: none;
+    }
+
+    #mainNav .taglink-navbar-nav li > a.taglink-nav-link{
+        display: block;
+        padding: 8px 7%;
+        font-size: 0.9em;
+        color: rgba(86, 84, 84, 0.85);
+    }
+
+    #mainNav .taglink-navbar-nav li > a.taglink-nav-link:hover{
+        color: rgb(54, 54, 54);
+    }
+
+    #mainNav .nav-taglink-container .user-profile{
+        justify-content: center;
+    }
+
+    #mainNav .nav-taglink-container .menu{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    #mainNav .nav-taglink-container .menu-taglink-btn{
+        margin-right: -16px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    #mainNav .nav-taglink-container .user-profile{
+        margin-right: 63px;
+    }
+}
+
+.taglink-container{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1200px){
+    .taglink-container{
+        max-width: 85%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .taglink-container{
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .taglink-container{
+        max-width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
