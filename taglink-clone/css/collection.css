@@ -227,6 +227,16 @@ body{
     }
 }
 
+.taglink-container .header{
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.taglink-container .header .heading{
+    font-size: 2.3em;
+    font-weight: 600;
+}
+
 .taglink-container .taglink-form-group{
     max-width: 80%;
     margin: auto;
