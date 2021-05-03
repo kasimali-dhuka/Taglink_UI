@@ -214,10 +214,11 @@ body{
     }
 }
 
-.link-preview-tab .preview-img {
+border: 6px solid #000;
+border-radius: 1em; {
     border: 6px solid #000;
     border-radius: 1em;
-    width: 110vw;
+    width: 80vw;
     height: 34vw;
     overflow: hidden;
 }

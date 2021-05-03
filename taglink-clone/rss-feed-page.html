@@ -119,7 +119,13 @@
                 $("#taglink-model").removeClass("show");
             });
 
+            //jQuery for removing show class when input is unfocused
+            $("#url").focusout(function(){
+                $("#taglink-model").removeClass("show");
+            });
+
         });
     </script>
+    <script src="js/feed-req.js"></script>
 </body>
 </html>
